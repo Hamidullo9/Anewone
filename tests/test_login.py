@@ -22,4 +22,4 @@ def test_login_unsuccess(driver):
         login.EnterPassword('Hamidullo8')
         login.ClickLogin()
     except:
-        return
+        driver.quit()
