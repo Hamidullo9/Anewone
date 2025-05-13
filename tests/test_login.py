@@ -10,10 +10,11 @@ def test_login_success(driver):
     login.ClickLogin()
     login.EnterPassword('Hamidullo8')
     login.ClickLogin()
+    driver.quit()
     # login.LogOutInitial()
 
 
-def test_login_unsuccess(driver):
+def test_login_un(driver):
     driver.get("https://my.proweb.uz/log-in")
     try:
         login = LoginPage(driver)
@@ -21,5 +22,6 @@ def test_login_unsuccess(driver):
         login.ClickLogin()
         login.EnterPassword('Hamidullo8')
         login.ClickLogin()
+        driver.quit()
     except:
         driver.quit()
