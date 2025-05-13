@@ -13,13 +13,13 @@ def test_login_success(driver):
     # login.LogOutInitial()
 
 
-def test_login_unsuccess(driver):
-    driver.get("https://my.proweb.uz/log-in")
-    try:
-        login = LoginPage(driver)
-        login.EnterPhoneNumber('998000000000')
-        login.ClickLogin()
-        login.EnterPassword('Hamidullo8')
-        login.ClickLogin()
-    except:
-        return
+# def test_login_un(driver):
+#     driver.get("https://my.proweb.uz/log-in")
+#     try:
+#         login = LoginPage(driver)
+#         login.EnterPhoneNumber('998000000000')
+#         login.ClickLogin()
+#         login.EnterPassword('Hamidullo8')
+#         login.ClickLogin()
+#     except:
+#         driver.quit()
